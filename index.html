@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Split Even · Shared expenses</title><link rel="stylesheet" href="style.css"></head>
+<body><main><header><span class="mark" aria-hidden="true">½</span><h1>Split Even</h1></header>
+<p class="intro">Enter what each person paid in dollars. Split the total equally and see who pays whom.</p>
+<div class="layout"><form id="bill"><h2>Group payments</h2><div id="people"></div><button id="add" type="button">+ Add person</button><button class="primary" type="submit">Calculate split</button><p id="error" role="alert"></p></form>
+<section id="result" aria-live="polite"><h2>Settlement</h2><p id="total"></p><ul id="transfers"></ul></section></div>
+</main><template id="row"><div class="person"><label>Name<input class="name" required maxlength="40"></label><label>Paid ($)<input class="amount" inputmode="decimal" required></label><button class="remove" type="button" aria-label="Remove person">×</button></div></template>
+<script src="settle.js"></script><script src="app.js"></script></body></html>

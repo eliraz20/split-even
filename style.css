@@ -1,0 +1,12 @@
+*{box-sizing:border-box}
+body{margin:0;background:#f6f3e9;color:#173c34;font:16px/1.5 system-ui,sans-serif}
+main{width:min(900px,92%);margin:clamp(32px,8vw,96px) auto}
+header,.person{display:flex;align-items:center;gap:12px}.mark{font:bold 32px Georgia;background:#d9eda0;padding:6px 13px;border-radius:12px}
+h1{font:600 clamp(38px,6vw,68px)/1.05 Georgia,serif;letter-spacing:-.045em;margin:0}.intro{max-width:510px;margin:20px 0 35px}
+.layout{display:grid;grid-template-columns:1.15fr 1fr;gap:20px}
+form,section{padding:clamp(16px,3vw,30px);border:1px solid #cad1bb;border-radius:16px;background:#fffef8}section{background:#193e34;color:#fcfff2;align-self:start}
+h2{margin:0 0 20px;font:500 26px Georgia,serif}label{display:grid;font-size:12px;font-weight:600;flex:2;min-width:0}label+label{flex:1}
+.person{margin-bottom:10px}input,button{font:inherit;border-radius:6px;padding:8px;border:1px solid #acbaaa}input{width:100%;font-size:16px;color:#173c34;background:white}
+button{cursor:pointer;background:#fffef8;color:#193e34}button:focus-visible,input:focus-visible{outline:3px solid #4087bb;outline-offset:2px}.remove{align-self:end}.primary{background:#d9eda0;margin-left:6px;font-weight:600}button:disabled{opacity:.45}
+ul{list-style:none;padding:0;margin:0}li{padding:10px 0;border-top:1px solid #688779}#error{color:#8e2725;margin:8px 0 0}
+@media(max-width:660px){.layout{grid-template-columns:1fr}.person{gap:6px}}
